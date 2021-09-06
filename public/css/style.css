@@ -64,9 +64,9 @@ body {
     outline: 0;
     transition: 0.3s;
     
-    &:focus {
+    /* &:focus {
         background: darken(#fff, 3%);
-    }
+    } */
 }
 
 .btn {
@@ -81,9 +81,9 @@ body {
     background:  #ABA194;
     transition: 0.3s;
     
-    &:hover {
+    /* &:hover {
         background: darken( #ABA194, 5%);
-    }
+    } */
 }
 
 @keyframes NO {
