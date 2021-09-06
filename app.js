@@ -40,7 +40,7 @@ app.post("/", function (req, res) {
     auth: "hemant1:110bd9cd0190ae64d1ed4805c07a99cb-us5",
   };
 
-  const request = https.request(url, options, function (response) {
+  const requests = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
       res.sendFile(__dirname + "/success.html");
     } else {
@@ -52,8 +52,8 @@ app.post("/", function (req, res) {
     });
   });
 
-  request.write(jsonData);
-  request.end();
+  requests.write(jsonData);
+  requests.end();
 
   console.log(firstName, lastName, email);
 });
